@@ -1,11 +1,12 @@
-import React from 'react'
+import { AppProviders } from './context/AppProviders.jsx'
+import { AppRouter } from './routes/AppRouter.jsx'
 
 const App = () => {
-  return (
-    <div>
-        <h1>Crypto Dashboard</h1>
-    </div>
-  )
+    return (
+    <AppProviders>
+        <AppRouter />
+    </AppProviders>
+    )
 }
 
 export default App
