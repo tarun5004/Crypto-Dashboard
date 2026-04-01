@@ -1,4 +1,4 @@
-// This auth layout provides a focused sign-in shell separate from the protected dashboard interface.
+﻿// This auth layout provides a focused sign-in shell separate from the protected dashboard interface.
 import { Outlet } from 'react-router-dom'
 import { authHighlights } from '../data/authData.js'
 import { Logo } from '../components/common/Logo.jsx'
@@ -32,3 +32,4 @@ export const AuthLayout = () => {
     </div>
   )
 }
+

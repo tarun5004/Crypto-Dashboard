@@ -1,4 +1,4 @@
-// This select component keeps dropdown styling and validation messaging consistent across settings and trade forms.
+﻿// This select component keeps dropdown styling and validation messaging consistent across settings and trade forms.
 export const FormSelect = ({ label, name, register, rules, options, error, className = '', ...props }) => {
   const registration = register ? register(name, rules) : {}
 
@@ -20,3 +20,4 @@ export const FormSelect = ({ label, name, register, rules, options, error, class
     </label>
   )
 }
+

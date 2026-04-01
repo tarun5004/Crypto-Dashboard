@@ -1,13 +1,13 @@
-export const ecommerceOverview = {
+﻿export const ecommerceOverview = {
   title: 'E-Commerce Dashboard',
   description: 'Track revenue momentum, order fulfillment, and product performance across channels.',
 }
 
 export const ecommerceStats = [
-  { label: 'Income', value: 47482, delta: 3.65, icon: 'wallet', tone: 'success' },
-  { label: 'Orders', value: 2542, delta: -5.25, icon: 'orders', tone: 'danger' },
-  { label: 'Activity', value: 16300, delta: 4.65, icon: 'pulse', tone: 'success' },
-  { label: 'Revenue', value: 20120, delta: 2.35, icon: 'sales', tone: 'success' },
+  { label: 'Income', value: 47482, delta: 3.65, icon: 'wallet', tone: 'success', format: 'currency' },
+  { label: 'Orders', value: 2542, delta: -5.25, icon: 'orders', tone: 'danger', format: 'number' },
+  { label: 'Activity', value: 16300, delta: 4.65, icon: 'pulse', tone: 'success', format: 'number' },
+  { label: 'Revenue', value: 20120, delta: 2.35, icon: 'sales', tone: 'success', format: 'currency' },
 ]
 
 export const ecommerceRevenueSeries = [
@@ -87,19 +87,8 @@ export const ecommerceProductRows = [
 ]
 
 export const ecommerceFulfillment = [
-  {
-    label: 'Avg. order value',
-    value: '$182',
-    trend: '+12%',
-  },
-  {
-    label: 'Refund rate',
-    value: '1.8%',
-    trend: '-0.4%',
-  },
-  {
-    label: 'Returning buyers',
-    value: '46%',
-    trend: '+6%',
-  },
+  { label: 'Avg. order value', value: '$182', trend: '+12%' },
+  { label: 'Refund rate', value: '1.8%', trend: '-0.4%' },
+  { label: 'Returning buyers', value: '46%', trend: '+6%' },
 ]
+

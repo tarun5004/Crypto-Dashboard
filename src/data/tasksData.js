@@ -1,4 +1,4 @@
-export const tasksOverview = {
+﻿export const tasksOverview = {
   title: 'Tasks',
   description: 'Organize backlog, active work, and completed deliverables in a single operational board.',
 }
@@ -32,3 +32,4 @@ export const taskBoardColumns = [
     ],
   },
 ]
+

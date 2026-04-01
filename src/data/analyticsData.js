@@ -1,13 +1,13 @@
-export const analyticsOverview = {
+﻿export const analyticsOverview = {
   title: 'Analytics Dashboard',
   description: 'Monitor campaign efficiency, acquisition quality, and regional growth in one view.',
 }
 
 export const analyticsStats = [
-  { label: 'Sales', value: 2382, delta: -3.65, icon: 'sales', tone: 'danger' },
-  { label: 'Earnings', value: 21300, delta: 6.65, icon: 'wallet', tone: 'success' },
-  { label: 'Visitors', value: 14212, delta: 5.25, icon: 'users', tone: 'success' },
-  { label: 'Orders', value: 64, delta: -2.25, icon: 'orders', tone: 'warning' },
+  { label: 'Sales', value: 2382, delta: -3.65, icon: 'sales', tone: 'danger', format: 'number' },
+  { label: 'Earnings', value: 21300, delta: 6.65, icon: 'wallet', tone: 'success', format: 'currency' },
+  { label: 'Visitors', value: 14212, delta: 5.25, icon: 'users', tone: 'success', format: 'number' },
+  { label: 'Orders', value: 64, delta: -2.25, icon: 'orders', tone: 'warning', format: 'number' },
 ]
 
 export const analyticsRevenueSeries = [
@@ -72,19 +72,8 @@ export const analyticsProjectRows = [
 ]
 
 export const analyticsCampaigns = [
-  {
-    title: 'Northern Europe roll-out',
-    value: '$84.2K',
-    change: '+14.3%',
-  },
-  {
-    title: 'Creator referral funnel',
-    value: '$29.8K',
-    change: '+8.1%',
-  },
-  {
-    title: 'Retention email sequence',
-    value: '$12.4K',
-    change: '-1.8%',
-  },
+  { title: 'Northern Europe roll-out', value: '$84.2K', change: '+14.3%' },
+  { title: 'Creator referral funnel', value: '$29.8K', change: '+8.1%' },
+  { title: 'Retention email sequence', value: '$12.4K', change: '-1.8%' },
 ]
+

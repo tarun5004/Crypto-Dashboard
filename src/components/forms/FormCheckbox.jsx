@@ -1,4 +1,4 @@
-// This checkbox field component keeps boolean preference inputs aligned with the shared form system.
+﻿// This checkbox field component keeps boolean preference inputs aligned with the shared form system.
 export const FormCheckbox = ({ label, description, name, register }) => {
   const registration = register ? register(name) : {}
 
@@ -12,3 +12,4 @@ export const FormCheckbox = ({ label, description, name, register }) => {
     </label>
   )
 }
+

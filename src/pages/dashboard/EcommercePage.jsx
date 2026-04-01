@@ -1,4 +1,4 @@
-// This ecommerce page assembles revenue, fulfillment, and product performance widgets from commerce mock data.
+﻿// This ecommerce page assembles revenue, fulfillment, and product performance widgets from commerce mock data.
 import { ecommerceChannelSegments, ecommerceFulfillment, ecommerceOverview, ecommerceProductColumns, ecommerceProductRows, ecommerceRevenueSeries, ecommerceSalesBars, ecommerceStats } from '../../data/ecommerceData.js'
 import { BarChart } from '../../components/charts/BarChart.jsx'
 import { DonutChart } from '../../components/charts/DonutChart.jsx'
@@ -26,7 +26,7 @@ export const EcommercePage = () => {
 
       <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
         {ecommerceStats.map((item) => (
-          <StatCard key={item.label} item={item} money />
+          <StatCard key={item.label} item={item} />
         ))}
       </div>
 
@@ -83,3 +83,4 @@ export const EcommercePage = () => {
     </div>
   )
 }
+

@@ -1,6 +1,6 @@
-// This crypto page combines market data tables, trend charts, and a React Hook Form trade panel from crypto mock data.
+﻿// This crypto page combines market data tables, trend charts, and a React Hook Form trade panel from crypto mock data.
 import { useEffect, useState } from 'react'
-import { useForm } from 'react-hook-form'
+import { useForm, useWatch } from 'react-hook-form'
 import { cryptoMarketColumns, cryptoMarketRows, cryptoMarketSeries, cryptoOverview, cryptoStats, buyOrders, sellOrders, tradeFormDefaults, tradePairOptions } from '../../data/cryptoData.js'
 import { useAppContext } from '../../hooks/useAppContext.js'
 import { Button } from '../../components/common/Button.jsx'
@@ -16,9 +16,9 @@ export const CryptoPage = () => {
   const { selectedCryptoPair, setSelectedCryptoPair } = useAppContext()
   const [tradeMessage, setTradeMessage] = useState('')
   const {
+    control,
     register,
     handleSubmit,
-    watch,
     formState: { errors },
   } = useForm({
     defaultValues: {
@@ -27,7 +27,8 @@ export const CryptoPage = () => {
     },
   })
 
-  const watchedPair = watch('pair')
+  const watchedPair = useWatch({ control, name: 'pair' })
+  const watchedSide = useWatch({ control, name: 'side', defaultValue: tradeFormDefaults.side })
 
   useEffect(() => {
     if (watchedPair) {
@@ -55,7 +56,7 @@ export const CryptoPage = () => {
 
       <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
         {cryptoStats.map((item) => (
-          <StatCard key={item.label} item={item} money compact />
+          <StatCard key={item.label} item={item} compact />
         ))}
       </div>
 
@@ -115,12 +116,12 @@ export const CryptoPage = () => {
           <form className="mt-4 space-y-4" onSubmit={handleSubmit(onSubmit)}>
             <div className="grid grid-cols-2 gap-3 rounded-2xl bg-white/[0.03] p-2">
               <label className="cursor-pointer">
-                <input type="radio" value="buy" className="sr-only" {...register('side')} defaultChecked />
-                <span className="block rounded-2xl bg-sky-500 px-4 py-2 text-center text-sm font-semibold text-slate-950">Buy</span>
+                <input type="radio" value="buy" className="sr-only" {...register('side')} />
+                <span className={`block rounded-2xl px-4 py-2 text-center text-sm font-semibold transition ${watchedSide === 'buy' ? 'bg-sky-500 text-slate-950' : 'bg-white/[0.04] text-white'}`}>Buy</span>
               </label>
               <label className="cursor-pointer">
                 <input type="radio" value="sell" className="sr-only" {...register('side')} />
-                <span className="block rounded-2xl bg-white/[0.04] px-4 py-2 text-center text-sm font-semibold text-white">Sell</span>
+                <span className={`block rounded-2xl px-4 py-2 text-center text-sm font-semibold transition ${watchedSide === 'sell' ? 'bg-rose-400 text-slate-950' : 'bg-white/[0.04] text-white'}`}>Sell</span>
               </label>
             </div>
             <FormSelect label="Trading pair" name="pair" register={register} options={tradePairOptions} error={errors.pair} rules={{ required: 'Choose a trading pair.' }} />

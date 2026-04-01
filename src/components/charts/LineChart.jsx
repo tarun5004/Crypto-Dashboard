@@ -1,4 +1,4 @@
-// This line chart component renders lightweight SVG trends for dashboard performance widgets from array data.
+﻿// This line chart component renders lightweight SVG trends for dashboard performance widgets from array data.
 export const LineChart = ({ series, strokeColor = '#38bdf8', fillColor = 'rgba(56, 189, 248, 0.14)', height = 240 }) => {
   const maxValue = Math.max(...series.map((point) => point.value))
   const minValue = Math.min(...series.map((point) => point.value))
@@ -11,18 +11,12 @@ export const LineChart = ({ series, strokeColor = '#38bdf8', fillColor = 'rgba(5
   })
 
   const linePath = coordinates.map((point) => `${point.x},${point.y}`).join(' ')
-  const areaPath = `0,100 ${linePath} 100,100`
+  const areaPath = `M 0 100 L ${linePath} L 100 100 Z`
 
   return (
     <div className="space-y-4">
       <svg viewBox="0 0 100 100" preserveAspectRatio="none" className="w-full" style={{ height }}>
-        <defs>
-          <linearGradient id="lineFill" x1="0" x2="0" y1="0" y2="1">
-            <stop offset="0%" stopColor={fillColor.replace('0.14', '0.28')} />
-            <stop offset="100%" stopColor="rgba(255,255,255,0)" />
-          </linearGradient>
-        </defs>
-        <path d={`M ${areaPath}`} fill="url(#lineFill)" />
+        <path d={areaPath} fill={fillColor} />
         <polyline fill="none" stroke={strokeColor} strokeWidth="2" points={linePath} />
         {coordinates.map((point) => (
           <circle key={point.label} cx={point.x} cy={point.y} r="1.8" fill={strokeColor} />
@@ -36,3 +30,4 @@ export const LineChart = ({ series, strokeColor = '#38bdf8', fillColor = 'rgba(5
     </div>
   )
 }
+

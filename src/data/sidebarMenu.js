@@ -1,4 +1,4 @@
-export const sidebarMenu = [
+﻿export const sidebarMenu = [
   {
     groupLabel: 'Dashboards',
     items: [
@@ -19,3 +19,4 @@ export const sidebarMenu = [
     ],
   },
 ]
+

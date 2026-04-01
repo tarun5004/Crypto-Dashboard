@@ -1,4 +1,4 @@
-// This analytics page composes reusable cards, charts, and tables from analytics mock data.
+﻿// This analytics page composes reusable cards, charts, and tables from analytics mock data.
 import { analyticsCampaigns, analyticsOverview, analyticsProjectColumns, analyticsProjectRows, analyticsRevenueSeries, analyticsStats, analyticsTrafficSegments } from '../../data/analyticsData.js'
 import { Button } from '../../components/common/Button.jsx'
 import { DataTable } from '../../components/common/DataTable.jsx'
@@ -81,3 +81,4 @@ export const AnalyticsPage = () => {
     </div>
   )
 }
+

@@ -1,4 +1,4 @@
-// This dashboard layout wraps all protected pages with the shared sidebar, navbar, and content spacing.
+﻿// This dashboard layout wraps all protected pages with the shared sidebar, navbar, and content spacing.
 import { Outlet } from 'react-router-dom'
 import { Navbar } from './Navbar.jsx'
 import { Sidebar } from './Sidebar.jsx'
@@ -18,3 +18,4 @@ export const DashboardLayout = () => {
     </div>
   )
 }
+

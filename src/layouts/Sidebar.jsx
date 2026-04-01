@@ -1,4 +1,4 @@
-// This sidebar component renders grouped navigation from mock menu data and handles desktop plus mobile shell behavior.
+﻿// This sidebar component renders grouped navigation from mock menu data and handles desktop plus mobile shell behavior.
 import { NavLink } from 'react-router-dom'
 import { sidebarMenu } from '../data/sidebarMenu.js'
 import { useAppContext } from '../hooks/useAppContext.js'
@@ -82,3 +82,4 @@ export const Sidebar = () => {
     </>
   )
 }
+

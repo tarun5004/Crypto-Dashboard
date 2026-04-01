@@ -1,4 +1,4 @@
-// This status badge component maps shared workflow states to consistent colors across all tables and cards.
+﻿// This status badge component maps shared workflow states to consistent colors across all tables and cards.
 const toneMap = {
   Active: 'bg-emerald-500/15 text-emerald-300',
   'On track': 'bg-emerald-500/15 text-emerald-300',
@@ -10,11 +10,14 @@ const toneMap = {
   warning: 'bg-amber-500/15 text-amber-300',
   Inactive: 'bg-amber-500/15 text-amber-300',
   Refunded: 'bg-amber-500/15 text-amber-300',
+  Medium: 'bg-amber-500/15 text-amber-300',
   'At risk': 'bg-rose-500/15 text-rose-300',
   danger: 'bg-rose-500/15 text-rose-300',
   Blocked: 'bg-rose-500/15 text-rose-300',
   Chargeback: 'bg-rose-500/15 text-rose-300',
+  High: 'bg-rose-500/15 text-rose-300',
   Done: 'bg-white/10 text-slate-200',
+  Low: 'bg-emerald-500/15 text-emerald-300',
 }
 
 export const StatusBadge = ({ value }) => {
@@ -22,3 +25,4 @@ export const StatusBadge = ({ value }) => {
 
   return <span className={`rounded-full px-2.5 py-1 text-xs font-semibold ${classes}`}>{value}</span>
 }
+

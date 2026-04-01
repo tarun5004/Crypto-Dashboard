@@ -1,4 +1,4 @@
-export const dashboardRoutes = [
+﻿export const dashboardRoutes = [
   { key: 'analytics', path: 'analytics', fullPath: '/dashboard/analytics', label: 'Analytics Dashboard' },
   { key: 'ecommerce', path: 'ecommerce', fullPath: '/dashboard/ecommerce', label: 'E-Commerce Dashboard' },
   { key: 'crypto', path: 'crypto', fullPath: '/dashboard/crypto', label: 'Crypto Dashboard' },
@@ -16,3 +16,4 @@ export const managementRoutes = [
 export const authRoutes = [
   { key: 'sign-in', path: '/auth/sign-in', label: 'Sign In' },
 ]
+

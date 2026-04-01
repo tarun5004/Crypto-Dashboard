@@ -1,4 +1,4 @@
-// This page header component renders a reusable title block with optional actions on every route-level page.
+﻿// This page header component renders a reusable title block with optional actions on every route-level page.
 export const PageHeader = ({ eyebrow, title, description, actions }) => {
   return (
     <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
@@ -13,3 +13,4 @@ export const PageHeader = ({ eyebrow, title, description, actions }) => {
     </div>
   )
 }
+

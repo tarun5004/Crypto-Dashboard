@@ -1,4 +1,4 @@
-import { AppProviders } from './context/AppProviders.jsx'
+﻿import { AppProviders } from './context/AppProviders.jsx'
 import { AppRouter } from './routes/AppRouter.jsx'
 
 const App = () => {
@@ -10,3 +10,4 @@ const App = () => {
 }
 
 export default App
+

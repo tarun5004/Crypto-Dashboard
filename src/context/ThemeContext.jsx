@@ -1,8 +1,7 @@
-import { createContext, useEffect, useState } from 'react'
+﻿import { useEffect, useState } from 'react'
+import { ThemeContext } from './themeContextValue.js'
 
 const THEME_STORAGE_KEY = 'crypto-dashboard-theme'
-
-export const ThemeContext = createContext(null)
 
 const getInitialTheme = () => {
   if (typeof window === 'undefined') {

@@ -1,4 +1,4 @@
-// This donut chart component turns segment percentages into a reusable conic-gradient summary visualization.
+﻿// This donut chart component turns segment percentages into a reusable conic-gradient summary visualization.
 export const DonutChart = ({ segments }) => {
   const gradient = segments
     .map((segment, index) => {
@@ -28,3 +28,4 @@ export const DonutChart = ({ segments }) => {
     </div>
   )
 }
+

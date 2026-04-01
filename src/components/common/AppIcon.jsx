@@ -1,4 +1,4 @@
-// This icon component centralizes lightweight SVG icons used across navigation, cards, and actions.
+﻿// This icon component centralizes lightweight SVG icons used across navigation, cards, and actions.
 const iconMap = {
   analytics: (
     <path d="M4 19h16M7 16V8m5 8V5m5 11v-6" />
@@ -117,3 +117,4 @@ export const AppIcon = ({ name, className = '', size = 18 }) => {
     </svg>
   )
 }
+

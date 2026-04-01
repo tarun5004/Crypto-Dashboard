@@ -1,4 +1,4 @@
-export const ordersOverview = {
+﻿export const ordersOverview = {
   title: 'Orders',
   description: 'Track payment status, order volume, and fulfillment issues before they impact customer experience.',
 }
@@ -26,3 +26,4 @@ export const orderRows = [
   { id: '#0005', customer: 'Kirk Batts', date: '2026-03-19', total: 187, paymentStatus: 'Paid', method: 'Visa' },
   { id: '#0006', customer: 'Mark Lebron', date: '2026-03-21', total: 784, paymentStatus: 'Paid', method: 'Mastercard' },
 ]
+

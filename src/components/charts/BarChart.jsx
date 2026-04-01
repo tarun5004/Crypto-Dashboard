@@ -1,4 +1,4 @@
-// This bar chart component visualizes category or monthly volume data using simple reusable vertical bars.
+﻿// This bar chart component visualizes category or monthly volume data using simple reusable vertical bars.
 export const BarChart = ({ series, color = 'bg-sky-400' }) => {
   const maxValue = Math.max(...series.map((point) => point.value))
 
@@ -17,3 +17,4 @@ export const BarChart = ({ series, color = 'bg-sky-400' }) => {
     </div>
   )
 }
+

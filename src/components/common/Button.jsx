@@ -1,4 +1,4 @@
-// This button component provides one reusable action style for page headers, forms, and cards.
+﻿// This button component provides one reusable action style for page headers, forms, and cards.
 import { AppIcon } from './AppIcon.jsx'
 
 export const Button = ({ children, variant = 'primary', icon, className = '', ...props }) => {
@@ -18,3 +18,4 @@ export const Button = ({ children, variant = 'primary', icon, className = '', ..
     </button>
   )
 }
+

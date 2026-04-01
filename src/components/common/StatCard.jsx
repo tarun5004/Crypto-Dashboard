@@ -1,10 +1,11 @@
-// This stat card component displays metric totals with trend context and iconography from page data files.
+﻿// This stat card component displays metric totals with trend context and iconography from page data files.
 import { AppIcon } from './AppIcon.jsx'
 import { SurfaceCard } from './SurfaceCard.jsx'
 import { formatCompactNumber, formatCurrency, formatPercent } from '../../utils/formatters.js'
 
 export const StatCard = ({ item, money = false, compact = false }) => {
-  const value = money ? formatCurrency(item.value, compact) : formatCompactNumber(item.value)
+  const shouldFormatAsCurrency = item.format === 'currency' || money
+  const value = shouldFormatAsCurrency ? formatCurrency(item.value, compact) : formatCompactNumber(item.value)
   const toneClass = item.delta >= 0 ? 'text-emerald-300 bg-emerald-500/10' : 'text-rose-300 bg-rose-500/10'
 
   return (
@@ -26,3 +27,4 @@ export const StatCard = ({ item, money = false, compact = false }) => {
     </SurfaceCard>
   )
 }
+

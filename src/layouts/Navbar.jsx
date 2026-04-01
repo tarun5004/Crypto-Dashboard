@@ -1,4 +1,4 @@
-// This navbar component hosts global actions like search, notifications, theme switching, and user session controls.
+﻿// This navbar component hosts global actions like search, notifications, theme switching, and user session controls.
 import { quickActions } from '../data/shellData.js'
 import { useAppContext } from '../hooks/useAppContext.js'
 import { useAuth } from '../hooks/useAuth.js'
@@ -76,3 +76,4 @@ export const Navbar = () => {
     </header>
   )
 }
+

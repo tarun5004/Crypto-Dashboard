@@ -1,4 +1,4 @@
-export const clientsOverview = {
+﻿export const clientsOverview = {
   title: 'Clients',
   description: 'Review key accounts, account health, and recent interactions across your active portfolio.',
 }
@@ -34,3 +34,4 @@ export const clientActivity = [
   { id: 'c3', title: 'Discarded invoice #1147', time: '3h ago', description: 'The draft invoice was removed after pricing correction.' },
   { id: 'c4', title: 'Signed in', time: '21h ago', description: 'Customer admin session started from the London office.' },
 ]
+

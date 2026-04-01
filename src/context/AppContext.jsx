@@ -1,7 +1,6 @@
-import { createContext, useState } from 'react'
+﻿import { useState } from 'react'
 import { initialNotifications } from '../data/shellData.js'
-
-export const AppContext = createContext(null)
+import { AppContext } from './appContextValue.js'
 
 export const AppContextProvider = ({ children }) => {
   const [sidebarOpen, setSidebarOpen] = useState(false)

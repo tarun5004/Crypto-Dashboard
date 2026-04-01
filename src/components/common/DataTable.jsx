@@ -1,4 +1,4 @@
-// This table component renders reusable dashboard tables from typed column metadata and mock data rows.
+﻿// This table component renders reusable dashboard tables from typed column metadata and mock data rows.
 import { Avatar } from './Avatar.jsx'
 import { StatusBadge } from './StatusBadge.jsx'
 import { formatCompactNumber, formatCurrency, formatPercent } from '../../utils/formatters.js'
@@ -90,3 +90,4 @@ export const DataTable = ({ columns, rows }) => {
     </div>
   )
 }
+

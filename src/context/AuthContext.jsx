@@ -1,9 +1,8 @@
-import { createContext, useState } from 'react'
+﻿import { useState } from 'react'
 import { defaultUser, signInDefaults } from '../data/authData.js'
+import { AuthContext } from './authContextValue.js'
 
 const AUTH_STORAGE_KEY = 'crypto-dashboard-auth'
-
-export const AuthContext = createContext(null)
 
 const getStoredUser = () => {
   if (typeof window === 'undefined') {

@@ -1,4 +1,4 @@
-// This logo component keeps the product branding consistent between the sidebar and auth layout.
+﻿// This logo component keeps the product branding consistent between the sidebar and auth layout.
 import { appBrand } from '../../data/shellData.js'
 
 export const Logo = () => {
@@ -19,3 +19,4 @@ export const Logo = () => {
     </div>
   )
 }
+

@@ -1,4 +1,4 @@
-export const appBrand = {
+﻿export const appBrand = {
   name: 'DashStack',
   badge: 'Pro',
   tagLine: 'Multi-dashboard suite',
@@ -41,3 +41,4 @@ export const initialNotifications = [
     read: true,
   },
 ]
+

@@ -1,4 +1,4 @@
-// This avatar component renders reusable initials-based profile badges for tables, nav, and profile cards.
+﻿// This avatar component renders reusable initials-based profile badges for tables, nav, and profile cards.
 export const Avatar = ({ initials, size = 'md', accent = false }) => {
   const sizeMap = {
     sm: 'h-8 w-8 text-xs',
@@ -15,3 +15,4 @@ export const Avatar = ({ initials, size = 'md', accent = false }) => {
     </div>
   )
 }
+

@@ -1,4 +1,4 @@
-export const formatCurrency = (value, compact = false) => {
+﻿export const formatCurrency = (value, compact = false) => {
   return new Intl.NumberFormat('en-US', {
     style: 'currency',
     currency: 'USD',
@@ -21,3 +21,4 @@ export const formatPercent = (value) => {
 export const formatChange = (value) => {
   return `${value > 0 ? '+' : ''}${value}`
 }
+

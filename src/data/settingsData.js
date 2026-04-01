@@ -1,4 +1,4 @@
-export const settingsOverview = {
+﻿export const settingsOverview = {
   title: 'Settings',
   description: 'Manage profile visibility, workspace defaults, and regional preferences in one settings surface.',
 }
@@ -52,3 +52,4 @@ export const settingsPreferences = [
     description: 'Surface large crypto market swings in the navbar alert tray.',
   },
 ]
+

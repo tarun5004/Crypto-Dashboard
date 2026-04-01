@@ -1,4 +1,4 @@
-// This form input component standardizes labeled text inputs and validation output for React Hook Form usage.
+﻿// This form input component standardizes labeled text inputs and validation output for React Hook Form usage.
 export const FormInput = ({ label, name, register, rules, error, className = '', ...props }) => {
   const registration = register ? register(name, rules) : {}
 
@@ -14,3 +14,4 @@ export const FormInput = ({ label, name, register, rules, error, className = '',
     </label>
   )
 }
+

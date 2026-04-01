@@ -1,4 +1,4 @@
-export const signInDefaults = {
+﻿export const signInDefaults = {
   email: 'admin@dashstack.dev',
   password: 'demo1234',
   remember: true,
@@ -26,3 +26,4 @@ export const authHighlights = [
     value: 'Enabled',
   },
 ]
+

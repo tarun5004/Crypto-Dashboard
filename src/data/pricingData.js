@@ -1,4 +1,4 @@
-export const pricingOverview = {
+﻿export const pricingOverview = {
   title: 'Plans & Pricing',
   description: 'Package your product into clear tiers with strong value framing for individuals and growing teams.',
 }
@@ -48,3 +48,4 @@ export const pricingFaq = [
     answer: 'The higher plans are structured for more users, more projects, and enterprise reporting needs.',
   },
 ]
+

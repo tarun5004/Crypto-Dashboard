@@ -1,4 +1,4 @@
-export const profileOverview = {
+﻿export const profileOverview = {
   title: 'Profile',
   description: 'Showcase ownership, current focus, and recent team activity with a clean personal summary.',
 }
@@ -31,7 +31,7 @@ export const profileActivity = [
   },
   {
     id: 'p2',
-    title: 'Charles Hall posted feedback on Christina Mason�s timeline',
+    title: 'Charles Hall posted feedback on Christina Mason’s timeline',
     time: '30m ago',
     body: 'Landing-page metrics and client insights were folded into the next dashboard review.',
   },
@@ -42,3 +42,4 @@ export const profileActivity = [
     body: 'A clearer component structure shipped for the reusable page shell and its shared widgets.',
   },
 ]
+

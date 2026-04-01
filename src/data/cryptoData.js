@@ -1,13 +1,13 @@
-export const cryptoOverview = {
+﻿export const cryptoOverview = {
   title: 'Crypto Dashboard',
   description: 'Follow market volatility, open orders, and trading activity with a focused execution layout.',
 }
 
 export const cryptoStats = [
-  { label: 'Portfolio Balance', value: 53252, delta: 6.35, icon: 'wallet', tone: 'success', subValue: '2.30 BTC' },
-  { label: 'BTC / USD', value: 23075, delta: 1.94, icon: 'bitcoin', tone: 'success', subValue: 'Volume: 132.6 BTC' },
-  { label: 'ETH / BTC', value: 6917, delta: -0.85, icon: 'coin', tone: 'warning', subValue: 'Volume: 32.9 BTC' },
-  { label: 'LTC / BTC', value: 5902, delta: 0.44, icon: 'pulse', tone: 'success', subValue: 'Volume: 31.2 BTC' },
+  { label: 'Portfolio Balance', value: 53252, delta: 6.35, icon: 'wallet', tone: 'success', subValue: '2.30 BTC', format: 'currency' },
+  { label: 'BTC / USD', value: 23075, delta: 1.94, icon: 'bitcoin', tone: 'success', subValue: 'Volume: 132.6 BTC', format: 'currency' },
+  { label: 'ETH / BTC', value: 6917, delta: -0.85, icon: 'coin', tone: 'warning', subValue: 'Volume: 32.9 BTC', format: 'currency' },
+  { label: 'LTC / BTC', value: 5902, delta: 0.44, icon: 'pulse', tone: 'success', subValue: 'Volume: 31.2 BTC', format: 'currency' },
 ]
 
 export const cryptoMarketSeries = [
@@ -69,3 +69,4 @@ export const tradeFormDefaults = {
   price: '23075',
   side: 'buy',
 }
+

@@ -1,4 +1,4 @@
-// This textarea component supports reusable multi-line form fields with the same validation behavior as other inputs.
+﻿// This textarea component supports reusable multi-line form fields with the same validation behavior as other inputs.
 export const FormTextarea = ({ label, name, register, rules, error, className = '', ...props }) => {
   const registration = register ? register(name, rules) : {}
 
@@ -14,3 +14,4 @@ export const FormTextarea = ({ label, name, register, rules, error, className = 
     </label>
   )
 }
+
