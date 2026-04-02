@@ -1,5 +1,4 @@
-﻿// This donut chart component turns segment percentages into a reusable conic-gradient summary visualization.
-export const DonutChart = ({ segments }) => {
+﻿export const DonutChart = ({ segments, centerLabel = 'Portfolio mix' }) => {
   const gradient = segments
     .map((segment, index) => {
       const start = segments.slice(0, index).reduce((sum, item) => sum + item.value, 0)
@@ -8,24 +7,23 @@ export const DonutChart = ({ segments }) => {
     .join(', ')
 
   return (
-    <div className="flex flex-col gap-6 lg:flex-row lg:items-center">
-      <div className="relative mx-auto flex h-44 w-44 items-center justify-center rounded-full" style={{ background: `conic-gradient(${gradient})` }}>
-        <div className="flex h-28 w-28 items-center justify-center rounded-full bg-slate-950/90 text-center text-xs text-slate-300">
-          Mixed traffic
+    <div className="flex flex-col gap-5 lg:flex-row lg:items-center">
+      <div className="relative mx-auto flex h-40 w-40 items-center justify-center rounded-full" style={{ background: `conic-gradient(${gradient})` }}>
+        <div className="flex h-24 w-24 items-center justify-center rounded-full bg-white text-center text-xs font-medium text-[var(--text-secondary)] shadow-sm">
+          {centerLabel}
         </div>
       </div>
       <div className="flex-1 space-y-3">
         {segments.map((segment) => (
-          <div key={segment.label} className="flex items-center justify-between gap-3 rounded-2xl bg-white/[0.03] px-4 py-3">
+          <div key={segment.label} className="flex items-center justify-between gap-3 rounded-2xl border border-[var(--border-soft)] bg-white px-4 py-3">
             <div className="flex items-center gap-3">
               <span className="h-3 w-3 rounded-full" style={{ backgroundColor: segment.color }} />
-              <span className="text-sm text-slate-200">{segment.label}</span>
+              <span className="text-sm text-[var(--text-primary)]">{segment.label}</span>
             </div>
-            <span className="text-sm font-semibold text-white">{segment.value}%</span>
+            <span className="text-sm font-semibold text-[var(--text-primary)]">{segment.value}%</span>
           </div>
         ))}
       </div>
     </div>
   )
 }
-
