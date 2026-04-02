@@ -33,7 +33,7 @@
   --border-soft: rgba(148, 163, 184, 0.18);
 
   /* ✅ FIXED — these 3 were the problem */
-  --text-primary: #f1f5f9;      /* was #4a9191 (dark teal, invisible on dark bg) */
+  --text-primary: #f1f5f9;      /* was #4a9191 (dark teal, invisible on dark bg nothing) */
   --text-secondary: #94a3b8;    /* was #ffffff (swapped with primary) */
   --text-muted: #64748b;        /* was #7b8ba3 (slightly too light, now properly muted) */
 
