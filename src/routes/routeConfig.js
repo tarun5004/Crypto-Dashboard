@@ -1,7 +1,7 @@
 ﻿export const dashboardRoutes = [
   { key: 'analytics', path: 'analytics', fullPath: '/dashboard/analytics', label: 'Analytics Dashboard' },
-  { key: 'ecommerce', path: 'ecommerce', fullPath: '/dashboard/ecommerce', label: 'E-Commerce Dashboard' },
-  { key: 'crypto', path: 'crypto', fullPath: '/dashboard/crypto', label: 'Crypto Dashboard' },
+  { key: 'ecommerce', path: 'ecommerce', fullPath: '/dashboard/ecommerce', label: 'Investment Products Dashboard' },
+  { key: 'crypto', path: 'crypto', fullPath: '/dashboard/crypto', label: 'Markets Dashboard' },
 ]
 
 export const managementRoutes = [
@@ -13,7 +13,4 @@ export const managementRoutes = [
   { key: 'tasks', path: 'tasks', fullPath: '/dashboard/tasks', label: 'Tasks' },
 ]
 
-export const authRoutes = [
-  { key: 'sign-in', path: '/auth/sign-in', label: 'Sign In' },
-]
-
+export const authRoutes = [{ key: 'sign-in', path: '/auth/sign-in', label: 'Sign In' }]

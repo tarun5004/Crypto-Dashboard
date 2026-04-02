@@ -3,12 +3,12 @@
     groupLabel: 'Dashboards',
     items: [
       { label: 'Analytics', path: '/dashboard/analytics', icon: 'analytics' },
-      { label: 'E-Commerce', path: '/dashboard/ecommerce', icon: 'store' },
-      { label: 'Crypto', path: '/dashboard/crypto', icon: 'coin' },
+      { label: 'Investment Products', path: '/dashboard/ecommerce', icon: 'store' },
+      { label: 'Markets', path: '/dashboard/crypto', icon: 'coin' },
     ],
   },
   {
-    groupLabel: 'Management',
+    groupLabel: 'Investor Operations',
     items: [
       { label: 'Settings', path: '/dashboard/settings', icon: 'settings' },
       { label: 'Clients', path: '/dashboard/clients', icon: 'users' },
@@ -19,4 +19,3 @@
     ],
   },
 ]
-
