@@ -1,15 +1,15 @@
 ﻿import { useEffect, useState } from 'react'
 import { ThemeContext } from './themeContextValue.js'
 
-const THEME_STORAGE_KEY = 'crypto-dashboard-theme'
+const THEME_STORAGE_KEY = 'gaur-investor-theme'
 
 const getInitialTheme = () => {
   if (typeof window === 'undefined') {
-    return 'dark'
+    return 'light'
   }
 
   const savedTheme = window.localStorage.getItem(THEME_STORAGE_KEY)
-  return savedTheme ?? 'dark'
+  return savedTheme ?? 'light'
 }
 
 export const ThemeContextProvider = ({ children }) => {
@@ -24,9 +24,5 @@ export const ThemeContextProvider = ({ children }) => {
     setTheme((currentTheme) => (currentTheme === 'dark' ? 'light' : 'dark'))
   }
 
-  return (
-    <ThemeContext.Provider value={{ theme, setTheme, toggleTheme }}>
-      {children}
-    </ThemeContext.Provider>
-  )
+  return <ThemeContext.Provider value={{ theme, setTheme, toggleTheme }}>{children}</ThemeContext.Provider>
 }

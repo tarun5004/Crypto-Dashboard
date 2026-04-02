@@ -1,29 +1,14 @@
 ﻿export const ordersOverview = {
   title: 'Orders',
-  description: 'Track payment status, order volume, and fulfillment issues before they impact customer experience.',
+  description: 'Create, manage, and track investor transactions with editable status and payment methods.',
 }
 
-export const orderHighlights = [
-  { label: 'Open orders', value: '124', tone: 'success' },
-  { label: 'Chargebacks', value: '08', tone: 'danger' },
-  { label: 'Refunded', value: '17', tone: 'warning' },
+export const orderSeeds = [
+  { id: 'ord1', customerName: 'Priya Sharma', date: '2026-03-04T10:30:00.000Z', total: 353000, status: 'Paid', paymentMethod: 'UPI', city: 'Mumbai' },
+  { id: 'ord2', customerName: 'Rohit Mehta', date: '2026-03-06T11:45:00.000Z', total: 690000, status: 'Chargeback', paymentMethod: 'NEFT', city: 'Bengaluru' },
+  { id: 'ord3', customerName: 'Anjali Singh', date: '2026-03-12T09:15:00.000Z', total: 486000, status: 'Refunded', paymentMethod: 'RTGS', city: 'Delhi' },
+  { id: 'ord4', customerName: 'Sunita Rao', date: '2026-03-14T15:20:00.000Z', total: 247000, status: 'Paid', paymentMethod: 'IMPS', city: 'Pune' },
 ]
 
-export const orderColumns = [
-  { key: 'id', label: '#', type: 'text' },
-  { key: 'customer', label: 'Billing Name', type: 'text' },
-  { key: 'date', label: 'Date', type: 'text' },
-  { key: 'total', label: 'Total', type: 'currency' },
-  { key: 'paymentStatus', label: 'Payment Status', type: 'status' },
-  { key: 'method', label: 'Method', type: 'text' },
-]
-
-export const orderRows = [
-  { id: '#0001', customer: 'Brian Smith', date: '2026-03-04', total: 353, paymentStatus: 'Paid', method: 'Mastercard' },
-  { id: '#0002', customer: 'Patrick Babcock', date: '2026-03-05', total: 690, paymentStatus: 'Chargeback', method: 'Visa' },
-  { id: '#0003', customer: 'Ronald Woods', date: '2026-03-12', total: 486, paymentStatus: 'Refunded', method: 'Visa' },
-  { id: '#0004', customer: 'Morris Evans', date: '2026-03-14', total: 247, paymentStatus: 'Paid', method: 'Mastercard' },
-  { id: '#0005', customer: 'Kirk Batts', date: '2026-03-19', total: 187, paymentStatus: 'Paid', method: 'Visa' },
-  { id: '#0006', customer: 'Mark Lebron', date: '2026-03-21', total: 784, paymentStatus: 'Paid', method: 'Mastercard' },
-]
-
+export const orderStatusOptions = ['Paid', 'Chargeback', 'Refunded', 'Pending']
+export const paymentMethodOptions = ['UPI', 'NEFT', 'RTGS', 'IMPS', 'Cheque', 'DD']

@@ -1,5 +1,3 @@
-﻿// This card wrapper standardizes panel styling so every page shares the same glassy dashboard surface.
-export const SurfaceCard = ({ children, className = '' }) => {
-  return <section className={`panel-surface rounded-[28px] p-5 ${className}`}>{children}</section>
+﻿export const SurfaceCard = ({ children, className = '' }) => {
+  return <section className={`panel-surface rounded-[24px] p-4 sm:p-5 ${className}`}>{children}</section>
 }
-

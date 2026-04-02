@@ -1,35 +1,14 @@
 ﻿export const tasksOverview = {
   title: 'Tasks',
-  description: 'Organize backlog, active work, and completed deliverables in a single operational board.',
+  description: 'Track advisory tasks, client follow-ups, and product work in a simple persisted workflow board.',
 }
 
-export const taskBoardColumns = [
-  {
-    title: 'Backlog',
-    description: 'Upcoming work that needs sizing and prioritization.',
-    tasks: [
-      { id: 't1', title: 'Refresh onboarding copy', owner: 'CH', priority: 'Low' },
-      { id: 't2', title: 'Audit dashboard empty states', owner: 'VM', priority: 'Medium' },
-      { id: 't3', title: 'Review plan card spacing', owner: 'AR', priority: 'High' },
-    ],
-  },
-  {
-    title: 'In Progress',
-    description: 'Current work actively moving through design or delivery.',
-    tasks: [
-      { id: 't4', title: 'Polish sidebar mobile transition', owner: 'CM', priority: 'High' },
-      { id: 't5', title: 'Sync price chart tooltips', owner: 'WH', priority: 'Medium' },
-      { id: 't6', title: 'Tune profile activity layout', owner: 'LT', priority: 'Low' },
-    ],
-  },
-  {
-    title: 'Completed',
-    description: 'Finished items ready for review and retrospective notes.',
-    tasks: [
-      { id: 't7', title: 'Ship reusable stat cards', owner: 'CH', priority: 'Done' },
-      { id: 't8', title: 'Create plan pricing FAQs', owner: 'AR', priority: 'Done' },
-      { id: 't9', title: 'Mock order table states', owner: 'VM', priority: 'Done' },
-    ],
-  },
+export const taskSeeds = [
+  { id: 'tsk1', title: 'Review Mumbai SIP escalations', status: 'Backlog', priority: 'High', owner: 'Priya Sharma', dueDate: '2026-04-05T00:00:00.000Z' },
+  { id: 'tsk2', title: 'Prepare NIFTY 50 investor deck', status: 'In Progress', priority: 'Medium', owner: 'Rohit Mehta', dueDate: '2026-04-08T00:00:00.000Z' },
+  { id: 'tsk3', title: 'Update HNI plan pricing FAQ', status: 'Completed', priority: 'Done', owner: 'Anjali Singh', dueDate: '2026-04-01T00:00:00.000Z' },
+  { id: 'tsk4', title: 'Call Pune family office lead', status: 'Backlog', priority: 'Low', owner: 'Sunita Rao', dueDate: '2026-04-09T00:00:00.000Z' },
 ]
 
+export const taskStatusOptions = ['Backlog', 'In Progress', 'Completed']
+export const taskPriorityOptions = ['Low', 'Medium', 'High', 'Done']

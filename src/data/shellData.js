@@ -1,44 +1,40 @@
 ﻿export const appBrand = {
-  name: 'DashStack',
-  badge: 'Pro',
-  tagLine: 'Multi-dashboard suite',
+  name: 'Gaur Investor Ltd',
+  badge: 'Wealth Suite',
+  tagLine: 'India-first investment operations dashboard',
 }
 
 export const userQuickProfile = {
-  name: 'Charles Hall',
-  role: 'Design Lead',
-  initials: 'CH',
+  name: 'Tarun Raj Gaur',
+  role: 'Managing Director',
+  initials: 'TG',
 }
 
 export const quickActions = [
-  {
-    label: 'Export Data',
-    type: 'secondary',
-  },
-  {
-    label: 'Create Report',
-    type: 'primary',
-  },
+  { label: 'Add Client', type: 'primary', route: '/dashboard/clients' },
+  { label: 'Create Order', type: 'secondary', route: '/dashboard/orders' },
 ]
 
 export const initialNotifications = [
   {
     id: 'n1',
-    title: 'Quarterly report ready',
-    message: 'The analytics snapshot has been generated for leadership review.',
+    title: 'SIP review scheduled',
+    message: 'The Meerut advisory team review for high-value SIP accounts is due this afternoon.',
     read: false,
+    category: 'Advisory',
   },
   {
     id: 'n2',
-    title: 'New enterprise client',
-    message: 'Apex Labs accepted the premium commerce onboarding workflow.',
+    title: 'NIFTY watchlist updated',
+    message: 'Two new large-cap counters were added to the India growth watchlist.',
     read: false,
+    category: 'Market',
   },
   {
     id: 'n3',
-    title: 'Market swing detected',
-    message: 'BTC volatility moved above the monitored threshold.',
+    title: 'Client KYC verified',
+    message: 'A premium investor account from Pune completed KYC verification.',
     read: true,
+    category: 'Compliance',
   },
 ]
-

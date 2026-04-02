@@ -1,22 +1,20 @@
-﻿// This logo component keeps the product branding consistent between the sidebar and auth layout.
-import { appBrand } from '../../data/shellData.js'
+﻿import { appBrand } from '../../data/shellData.js'
 
 export const Logo = () => {
   return (
     <div className="flex items-center gap-3">
-      <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-sky-500/20 text-lg font-semibold text-sky-300 ring-1 ring-sky-400/20">
-        DS
+      <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-[var(--accent-soft)] text-lg font-semibold text-[var(--accent)] ring-1 ring-[var(--border-soft)]">
+        GI
       </div>
       <div>
-        <div className="flex items-center gap-2">
-          <p className="text-sm font-semibold tracking-[0.2em] text-white/90">{appBrand.name}</p>
-          <span className="rounded-full bg-sky-500/15 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-[0.18em] text-sky-300">
+        <div className="flex flex-wrap items-center gap-2">
+          <p className="text-sm font-semibold tracking-[0.12em] text-[var(--text-primary)]">{appBrand.name}</p>
+          <span className="rounded-full bg-[var(--accent-soft)] px-2 py-0.5 text-[10px] font-semibold uppercase tracking-[0.18em] text-[var(--accent)]">
             {appBrand.badge}
           </span>
         </div>
-        <p className="text-xs text-slate-400">{appBrand.tagLine}</p>
+        <p className="text-xs text-[var(--text-secondary)]">{appBrand.tagLine}</p>
       </div>
     </div>
   )
 }
-

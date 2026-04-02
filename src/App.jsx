@@ -1,13 +1,14 @@
 ﻿import { AppProviders } from './context/AppProviders.jsx'
+import { ToastContainer } from './components/common/ToastContainer.jsx'
 import { AppRouter } from './routes/AppRouter.jsx'
 
 const App = () => {
-    return (
+  return (
     <AppProviders>
-        <AppRouter />
+      <AppRouter />
+      <ToastContainer />
     </AppProviders>
-    )
+  )
 }
 
 export default App
-

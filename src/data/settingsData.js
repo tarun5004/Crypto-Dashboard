@@ -1,55 +1,39 @@
 ﻿export const settingsOverview = {
   title: 'Settings',
-  description: 'Manage profile visibility, workspace defaults, and regional preferences in one settings surface.',
+  description: 'Control advisory defaults, communication preferences, and regional platform settings.',
 }
 
 export const settingsSections = ['Account', 'Workspace', 'Security']
 
 export const settingsFormDefaults = {
-  username: 'charles.hall',
-  bio: 'Designing clean interface systems for analytics, commerce, and crypto operations.',
-  firstName: 'Charles',
-  lastName: 'Hall',
-  email: 'admin@dashstack.dev',
-  addressLine1: '1234 Mission Street',
-  addressLine2: 'Studio 5B',
-  city: 'San Francisco',
-  state: 'CA',
-  zip: '94103',
-  timezone: 'PST',
+  username: 'tarun.raj.gaur',
+  bio: 'Building disciplined, India-first wealth journeys for long-term investors.',
+  firstName: 'Tarun',
+  lastName: 'Gaur',
+  email: 'tarun@gaurinvestor.in',
+  addressLine1: 'Gaur Investor Ltd, Civil Lines',
+  addressLine2: 'Office 5, First Floor',
+  city: 'Meerut',
+  state: 'Uttar Pradesh',
+  zip: '250001',
+  timezone: 'IST',
   language: 'English',
 }
 
 export const settingsSelectOptions = {
   timezone: [
-    { value: 'PST', label: 'Pacific Standard Time' },
-    { value: 'EST', label: 'Eastern Standard Time' },
-    { value: 'GMT', label: 'Greenwich Mean Time' },
     { value: 'IST', label: 'India Standard Time' },
+    { value: 'GST', label: 'Gulf Standard Time' },
+    { value: 'SGT', label: 'Singapore Time' },
   ],
   language: [
     { value: 'English', label: 'English' },
-    { value: 'Spanish', label: 'Spanish' },
-    { value: 'French', label: 'French' },
-    { value: 'German', label: 'German' },
+    { value: 'Hindi', label: 'Hindi' },
   ],
 }
 
 export const settingsPreferences = [
-  {
-    id: 'weeklySummary',
-    label: 'Weekly email summary',
-    description: 'Send a Monday snapshot of activity across all dashboards.',
-  },
-  {
-    id: 'productUpdates',
-    label: 'Product update alerts',
-    description: 'Notify me when new dashboard blocks or filters are added.',
-  },
-  {
-    id: 'tradeWarnings',
-    label: 'Trading volatility warnings',
-    description: 'Surface large crypto market swings in the navbar alert tray.',
-  },
+  { id: 'weeklySummary', label: 'Weekly investor summary', description: 'Send a Monday digest of investor activity and plan performance.' },
+  { id: 'productUpdates', label: 'Product launch alerts', description: 'Notify me when new wealth products or plan changes are published.' },
+  { id: 'tradeWarnings', label: 'Market movement alerts', description: 'Send alerts when tracked counters move outside the watch threshold.' },
 ]
-

@@ -1,37 +1,17 @@
 ﻿export const clientsOverview = {
   title: 'Clients',
-  description: 'Review key accounts, account health, and recent interactions across your active portfolio.',
+  description: 'Manage investor relationships, contact details, and account status across your India advisory book.',
 }
 
-export const clientColumns = [
-  { key: 'client', label: 'Client', type: 'identity' },
-  { key: 'company', label: 'Company', type: 'text' },
-  { key: 'email', label: 'Email', type: 'text' },
-  { key: 'status', label: 'Status', type: 'status' },
+export const clientSeeds = [
+  { id: 'cl1', name: 'Priya Sharma', company: 'HDFC Securities', email: 'priya.sharma@hdfcsec.co.in', city: 'Mumbai', status: 'Active', phone: '+91 98765 12001', about: 'High-value SIP client with active retirement planning requirements.' },
+  { id: 'cl2', name: 'Rohit Mehta', company: 'Groww', email: 'rohit.mehta@groww.in', city: 'Bengaluru', status: 'Active', phone: '+91 98765 12002', about: 'Long-term equity investor focused on NIFTY and banking themes.' },
+  { id: 'cl3', name: 'Anjali Singh', company: 'Kotak Mahindra', email: 'anjali.singh@kotak.com', city: 'Delhi', status: 'Inactive', phone: '+91 98765 12003', about: 'Advisory follow-up needed for paused portfolio rebalancing.' },
+  { id: 'cl4', name: 'Vikram Nair', company: 'Angel One', email: 'vikram.nair@angelone.in', city: 'Hyderabad', status: 'Blocked', phone: '+91 98765 12004', about: 'Pending compliance update before new allocations can proceed.' },
 ]
 
-export const clientRows = [
-  { client: { title: 'Garrett Winters', subtitle: 'West Coast Lead', avatar: 'G' }, company: 'Good Guys', email: 'garrett@wins.com', status: 'Active' },
-  { client: { title: 'Ashton Cox', subtitle: 'Partnership Owner', avatar: 'A' }, company: 'Leviz Furniture', email: 'ashton@cox.com', status: 'Active' },
-  { client: { title: 'Sonya Frost', subtitle: 'Growth Advisor', avatar: 'S' }, company: 'Child World', email: 'sonya@frost.com', status: 'Blocked' },
-  { client: { title: 'Jena Gaines', subtitle: 'RevOps Partner', avatar: 'J' }, company: 'Helping Hand', email: 'jena@gaines.com', status: 'Inactive' },
-  { client: { title: 'Angelica Ramos', subtitle: 'Enterprise Champion', avatar: 'AR' }, company: 'The Wiz', email: 'angelica@ramos.com', status: 'Active' },
+export const clientActivitySeeds = [
+  { id: 'ca1', title: 'Client KYC approved', time: '30m ago', description: 'A new wealth account from Pune completed onboarding successfully.' },
+  { id: 'ca2', title: 'SIP mandate updated', time: '2h ago', description: 'Monthly SIP amount revised from ₹10,000 to ₹25,000.' },
+  { id: 'ca3', title: 'Portfolio review booked', time: '4h ago', description: 'Advisory call scheduled for large-cap allocation review.' },
 ]
-
-export const spotlightClient = {
-  name: 'Angelica Ramos',
-  initials: 'AR',
-  company: 'The Wiz',
-  email: 'angelica@ramos.com',
-  phone: '+1 (234) 123-123-123',
-  status: 'Active',
-  about: 'Strong strategic partner with expansion opportunities across billing, analytics, and embedded reporting.',
-}
-
-export const clientActivity = [
-  { id: 'c1', title: 'Signed out', time: '30m ago', description: 'Security review completed after device refresh.' },
-  { id: 'c2', title: 'Created invoice #1204', time: '2h ago', description: 'Finance workflow generated the Q2 rollout invoice.' },
-  { id: 'c3', title: 'Discarded invoice #1147', time: '3h ago', description: 'The draft invoice was removed after pricing correction.' },
-  { id: 'c4', title: 'Signed in', time: '21h ago', description: 'Customer admin session started from the London office.' },
-]
-

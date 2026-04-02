@@ -2,7 +2,7 @@
 import { defaultUser, signInDefaults } from '../data/authData.js'
 import { AuthContext } from './authContextValue.js'
 
-const AUTH_STORAGE_KEY = 'crypto-dashboard-auth'
+const AUTH_STORAGE_KEY = 'gaur_session'
 
 const getStoredUser = () => {
   if (typeof window === 'undefined') {
@@ -33,9 +33,5 @@ export const AuthContextProvider = ({ children }) => {
     setUser(null)
   }
 
-  return (
-    <AuthContext.Provider value={{ user, isAuthenticated: Boolean(user), login, logout }}>
-      {children}
-    </AuthContext.Provider>
-  )
+  return <AuthContext.Provider value={{ user, isAuthenticated: Boolean(user), login, logout }}>{children}</AuthContext.Provider>
 }

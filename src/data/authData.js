@@ -1,29 +1,19 @@
 ﻿export const signInDefaults = {
-  email: 'admin@dashstack.dev',
-  password: 'demo1234',
+  email: 'tarun@gaurinvestor.in',
+  password: 'demo123',
   remember: true,
 }
 
 export const defaultUser = {
-  name: 'Charles Hall',
-  role: 'Design Lead',
-  email: 'admin@dashstack.dev',
-  initials: 'CH',
-  location: 'San Francisco, CA',
+  name: 'Tarun Raj Gaur',
+  role: 'Managing Director',
+  email: 'tarun@gaurinvestor.in',
+  initials: 'TG',
+  location: 'Meerut, Uttar Pradesh',
 }
 
 export const authHighlights = [
-  {
-    label: 'Live mock dashboards',
-    value: '9 pages',
-  },
-  {
-    label: 'Reusable chart widgets',
-    value: '12 blocks',
-  },
-  {
-    label: 'Protected routes',
-    value: 'Enabled',
-  },
+  { label: 'Investor dashboards', value: '9 modules' },
+  { label: 'Persisted records', value: 'Local storage' },
+  { label: 'India market ready', value: 'INR / en-IN' },
 ]
-
