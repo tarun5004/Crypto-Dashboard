@@ -1,4 +1,4 @@
-﻿import { useMemo, useState } from 'react'
+﻿import { useState } from 'react'
 import { initialNotifications } from '../data/shellData.js'
 import { useLocalStorageCollection } from '../hooks/useLocalStorageCollection.js'
 import { COLLECTION_KEYS, initializeSchema } from '../utils/schemaVersion.js'
@@ -21,23 +21,20 @@ export const AppContextProvider = ({ children }) => {
     )
   }
 
-  const value = useMemo(
-    () => ({
-      sidebarOpen,
-      setSidebarOpen,
-      selectedCryptoPair,
-      setSelectedCryptoPair,
-      notifications: notificationsCollection.items,
-      setNotifications: notificationsCollection.setItems,
-      createNotification: notificationsCollection.createItem,
-      updateNotification: notificationsCollection.updateItem,
-      deleteNotification: notificationsCollection.deleteItem,
-      markAllNotificationsRead,
-      systemBanner,
-      dismissSystemBanner: () => setSystemBanner(''),
-    }),
-    [notificationsCollection, selectedCryptoPair, sidebarOpen, systemBanner],
-  )
+  const value = {
+    sidebarOpen,
+    setSidebarOpen,
+    selectedCryptoPair,
+    setSelectedCryptoPair,
+    notifications: notificationsCollection.items,
+    setNotifications: notificationsCollection.setItems,
+    createNotification: notificationsCollection.createItem,
+    updateNotification: notificationsCollection.updateItem,
+    deleteNotification: notificationsCollection.deleteItem,
+    markAllNotificationsRead,
+    systemBanner,
+    dismissSystemBanner: () => setSystemBanner(''),
+  }
 
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>
 }

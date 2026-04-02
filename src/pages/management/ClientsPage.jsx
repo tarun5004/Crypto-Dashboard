@@ -1,5 +1,5 @@
 ﻿// This clients page persists investor records and logs CRUD actions into a lightweight relationship activity feed.
-import { useEffect, useMemo, useState } from 'react'
+import { useMemo, useState } from 'react'
 import { clientActivitySeeds, clientSeeds, clientsOverview } from '../../data/clientsData.js'
 import { useLocalStorageCollection } from '../../hooks/useLocalStorageCollection.js'
 import { useModal } from '../../hooks/useModal.js'
@@ -52,12 +52,6 @@ export const ClientsPage = () => {
   const [selectedClientId, setSelectedClientId] = useState(clientSeeds[0]?.id ?? '')
   const [editingClient, setEditingClient] = useState(null)
   const [deletingClient, setDeletingClient] = useState(null)
-
-  useEffect(() => {
-    if (!clientsCollection.items.some((item) => item.id === selectedClientId)) {
-      setSelectedClientId(clientsCollection.items[0]?.id ?? '')
-    }
-  }, [clientsCollection.items, selectedClientId])
 
   const logActivity = (title, description) => {
     activityCollection.createItem({

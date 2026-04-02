@@ -3,7 +3,7 @@
     sm: 'h-8 w-8 text-xs',
     md: 'h-10 w-10 text-sm',
     lg: 'h-12 w-12 text-base',
-    xl: 'h-18 w-18 text-xl',
+    xl: 'h-[4.5rem] w-[4.5rem] text-xl',
   }
 
   return (

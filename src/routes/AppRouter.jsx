@@ -1,7 +1,8 @@
-﻿// This router composes auth, protected dashboard routes, and default redirects from the route configuration map.
+﻿// This router composes auth, protected dashboard routes, and page-level error boundaries around route-level screens.
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 import { DashboardLayout } from '../layouts/DashboardLayout.jsx'
 import { AuthLayout } from '../layouts/AuthLayout.jsx'
+import { PageErrorBoundary } from '../components/common/PageErrorBoundary.jsx'
 import { useAuth } from '../hooks/useAuth.js'
 import { dashboardRoutes, managementRoutes } from './routeConfig.js'
 import { ProtectedRoute } from './ProtectedRoute.jsx'
@@ -45,8 +46,18 @@ export const AppRouter = () => {
           <Route path="dashboard" element={<DashboardLayout />}>
             <Route index element={<Navigate to="analytics" replace />} />
             {[...dashboardRoutes, ...managementRoutes].map((route) => {
-              const RouteComponent = routeRegistry[route.key]
-              return <Route key={route.key} path={route.path} element={<RouteComponent />} />
+              const RouteView = routeRegistry[route.key]
+              return (
+                <Route
+                  key={route.key}
+                  path={route.path}
+                  element={
+                    <PageErrorBoundary pageName={route.label}>
+                      <RouteView />
+                    </PageErrorBoundary>
+                  }
+                />
+              )
             })}
           </Route>
         </Route>
@@ -55,4 +66,3 @@ export const AppRouter = () => {
     </BrowserRouter>
   )
 }
-

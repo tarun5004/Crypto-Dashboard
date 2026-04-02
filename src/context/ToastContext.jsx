@@ -1,7 +1,6 @@
-﻿import { createContext, useCallback, useMemo, useState } from 'react'
+﻿import { useCallback, useMemo, useState } from 'react'
 import { createId } from '../utils/ids.js'
-
-export const ToastContext = createContext(null)
+import { ToastContext } from './toastContextValue.js'
 
 export const ToastProvider = ({ children }) => {
   const [toasts, setToasts] = useState([])
